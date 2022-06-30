@@ -107,22 +107,113 @@
 								<!--end::Notice-->
 								<!--begin::Card-->
 								<div class="card card-custom">
-									<div class="card-header flex-wrap border-0 pt-6 pb-0">
+									<div class="card-header">
 										<div class="card-title">
 											<h3 class="card-label">Extract PDF Data</h3>
 												
 										</div>
-										<input type="file" class="filestyle" id="custpage_file" name="custpage_file"  />
+
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
-											
-											<button class="btn btn-primary" id="Save">Export To Netsuite</button>
+											<span class="svg-icon svg-icon-primary svg-icon-3x" id="file_attach"><!--begin::Svg Icon | path:D:\xampp\htdocs\keenthemes\legacy\keen\theme\demo7\dist/../src/media/svg/icons\Files\Cloud-upload.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<polygon points="0 0 24 0 24 24 0 24"/>
+													<path d="M5.74714567,13.0425758 C4.09410362,11.9740356 3,10.1147886 3,8 C3,4.6862915 5.6862915,2 9,2 C11.7957591,2 14.1449096,3.91215918 14.8109738,6.5 L17.25,6.5 C19.3210678,6.5 21,8.17893219 21,10.25 C21,12.3210678 19.3210678,14 17.25,14 L8.25,14 C7.28817895,14 6.41093178,13.6378962 5.74714567,13.0425758 Z" fill="#000000" opacity="0.3"/>
+													<path d="M11.1288761,15.7336977 L11.1288761,17.6901712 L9.12120481,17.6901712 C8.84506244,17.6901712 8.62120481,17.9140288 8.62120481,18.1901712 L8.62120481,19.2134699 C8.62120481,19.4896123 8.84506244,19.7134699 9.12120481,19.7134699 L11.1288761,19.7134699 L11.1288761,21.6699434 C11.1288761,21.9460858 11.3527337,22.1699434 11.6288761,22.1699434 C11.7471877,22.1699434 11.8616664,22.1279896 11.951961,22.0515402 L15.4576222,19.0834174 C15.6683723,18.9049825 15.6945689,18.5894857 15.5161341,18.3787356 C15.4982803,18.3576485 15.4787093,18.3380775 15.4576222,18.3202237 L11.951961,15.3521009 C11.7412109,15.173666 11.4257142,15.1998627 11.2472793,15.4106128 C11.1708299,15.5009075 11.1288761,15.6153861 11.1288761,15.7336977 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.959697, 18.661508) rotate(-90.000000) translate(-11.959697, -18.661508) "/>
+												</g>
+											</svg><!--end::Svg Icon--></span>
+											 <!-- <button class="btn btn-primary" id="Save" >Export To Netsuite</button>  -->
 										</div>
 									</div>
 									<div class="card-body" >
 										<!--begin: Search Form-->
 										<!--begin::Search Form-->
 										<div class="mb-7">
+
+											<div class="form-group row" id="template">
+												<label class="col-form-label text-right col-lg-3 col-sm-12">Template:</label>
+												<div class="col-lg-6 col-md-9 col-sm-12">
+													<div class="input-group">
+														<select class="form-control" id="list_template">
+															<option value="">Select Template</option>
+															<option value="templete">Template 1</option>
+															<option value="2">Template 2</option>
+															<option value="3">Template 3</option>
+				
+															<option value="1">Template 4</option>
+															<option value="2">Template 5</option>
+															<option value="3">Template 6</option>
+			
+															<option value="1">Template 7</option>
+															<option value="2">Template 8</option>
+															<option value="3">Template 9</option>
+			
+															<option value="1">Template 10</option>
+															<option value="2">Template 11</option>
+															<option value="3">Template 12</option>
+			
+															<option value="1">Template 13</option>
+															<option value="2">Template 14</option>
+															<option value="3">Template 15</option>
+			
+															<option value="1">Template 16</option>
+															<option value="2">Template 17</option>
+															<option value="3">Template 18</option>
+			
+			
+														</select>
+					   
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group row"  id="template">
+												<div class="col-lg-6 col-md-9 col-sm-12">
+													<div class="input-group">
+														<input type="file" class="filestyle" id="custpage_file" name="custpage_file" style="display:none;" />
+					   
+													</div>
+												</div>
+											</div>
+
+											<!-- <div class="col-md-6 my-2 my-md-2 align-items-center justify-content-center">
+												<div class="d-flex align-items-center" id="template">
+													
+											
+														<label class="mr-4 mb-0 d-none d-md-block">Template: </label>
+														<select class="form-control" id="kt_datatable_search_type" >
+															<option value="">Select</option>
+															<option value="1">Template 1</option>
+															<option value="2">Template 2</option>
+															<option value="templete">Template 3</option>
+				
+															<option value="1">Template 4</option>
+															<option value="2">Template 5</option>
+															<option value="3">Template 6</option>
+			
+															<option value="1">Template 7</option>
+															<option value="2">Template 8</option>
+															<option value="3">Template 9</option>
+			
+															<option value="1">Template 10</option>
+															<option value="2">Template 11</option>
+															<option value="3">Template 12</option>
+			
+															<option value="1">Template 13</option>
+															<option value="2">Template 14</option>
+															<option value="3">Template 15</option>
+			
+															<option value="1">Template 16</option>
+															<option value="2">Template 17</option>
+															<option value="3">Template 18</option>
+			
+			
+														</select>
+												</div>
+											</div>
+										 -->
+										
+
 											<div class="row align-items-center">
 												<div class="col-lg-9 col-xl-8">
 													<div class="row align-items-center">
@@ -130,29 +221,6 @@
 															<div class="" >
 																<label class="mr-3 mb-0 d-none d-md-block">Date:</label>
 																<input   type="text" class="form-control" id="date" required style="width:100%;">
-															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">To:</label>
-																<input   type="text" class="form-control" id="to" required style="width:100%;">
-															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">Attn:</label>
-																<input   type="text" class="form-control"  id="attn" required style="width:100%;">
-															</div>
-														</div>
-														
-													</div>
-													<div class="separator separator-dashed my-2"></div>
-
-													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">From:</label>
-																<input   type="text" class="form-control" id="from" required style="width:100%;">
 															</div>
 														</div>
 														<div class="col-md-4 my-2 my-md-0">
@@ -167,48 +235,55 @@
 																<input   type="text" class="form-control" id="shipper" required style="width:100%;">
 															</div>
 														</div>
+														
+														<!-- <div class="col-md-4 my-2 my-md-0">
+															<div class="">
+																<label class="mr-3 mb-0 d-none d-md-block">To:</label>
+																<input   type="text" class="form-control" id="to" required style="width:100%;">
+															</div>
+														</div> -->
+														<!-- <div class="col-md-4 my-2 my-md-0">
+															<div class="">
+																<label class="mr-3 mb-0 d-none d-md-block">Attn:</label>
+																<input   type="text" class="form-control"  id="attn" required style="width:100%;">
+															</div>
+														</div> -->
+														
 													</div>
-													<div class="separator separator-dashed my-2"></div>
+													
 
 													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
+														<!-- <div class="col-md-4 my-2 my-md-0">
 															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">Pol:</label>
-																<input   type="text" class="form-control" id="pol" required style="width:100%;">
+																<label class="mr-3 mb-0 d-none d-md-block">From:</label>
+																<input   type="text" class="form-control" id="from" required style="width:100%;">
 															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">Term:</label>
-																<input   type="text" class="form-control" id="term"  required style="width:100%;">
-															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="">
-																<label class="mr-3 mb-0 d-none d-md-block">POD:</label>
-																<input   type="text" class="form-control" id="pod"  required style="width:100%;">
-															</div>
-														</div>
+														</div> -->
+														
+														
 													</div>
+												
 
-													<div class="separator separator-dashed my-2"></div>
+													
+
+													
 
 													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
+														<!-- <div class="col-md-4 my-2 my-md-0">
 															<div class="">
 																<label class="mr-3 mb-0 d-none d-md-block">Commodity:</label>
 																<input   type="text" class="form-control" id="commodity" required style="width:100%;">
 															</div>
-														</div>
+														</div> -->
 														
-														<div class="col-md-4 my-2 my-md-0">
+														<!-- <div class="col-md-4 my-2 my-md-0">
 															<div class="">
 																<label class="mr-3 mb-0 d-none d-md-block">volume:</label>
 																<input   type="text" class="form-control" id="volume"  required style="width:100%;">
 															</div>
-														</div>
+														</div> -->
 													</div>
-													<div class="separator separator-dashed my-2"></div>
+													
 
 												</div>
 												
@@ -219,16 +294,20 @@
 										<!--begin: Datatable-->
 										<div class="" >
 
-											<table class="table">
+											<table class="table table-striped">
 												<thead>
 												  <tr>
 													<th scope="col">Tank Number</th>
 													<th scope="col">Tare WT</th>
+													<th scope="col">From</th>
+													<th scope="col">TO</th>
+													<th scope="col">Commodity</th>
 													<th scope="col">Release Date</th>
 													<th scope="col">Release Ref</th>
+													<th scope="col">Volume</th>
 												  </tr>
 												</thead>
-												<tbody id="tableData">
+												<tbody id="tableData" >
 												 
 												
 												</tbody>
@@ -239,6 +318,15 @@
 										<!--end: Datatable-->
 										
 									</div>
+								
+									<div class="card-footer">
+										<div class="row">
+											<div class="col-lg-8"></div>
+											<div class="col-lg-9">
+												<button class="btn btn-primary font-weight-bold mr-2" id="Save">Export</button>
+											</div>
+										</div>
+									</div>
 									
 								</div>
 								<!--end::Card-->
@@ -248,9 +336,7 @@
 						</div>
 						<!--end::Entry-->
 					</div>
-					<!--end::Content-->
-					<!--begin::Footer-->
-					<!--doc: add "bg-white" class to have footer with solod background color-->
+				
 					
 					<!--end::Footer-->
 				</div>
@@ -273,201 +359,13 @@
 			<!--begin::Content-->
 			<div class="offcanvas-content">
 				<!--begin::Container-->
-				<div class="quick-search quick-search-offcanvas quick-search-has-result" id="kt_quick_search_offcanvas">
-					<!--begin::Form-->
-					<form method="get" class="quick-search-form border-bottom pt-5 pb-1">
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text">
-									<span class="svg-icon svg-icon-lg">
-										<!--begin::Svg Icon | path:assets/media/svg/icons/General/Search.svg-->
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-												<rect x="0" y="0" width="24" height="24" />
-												<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-												<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero" />
-											</g>
-										</svg>
-										<!--end::Svg Icon-->
-									</span>
-								</span>
-							</div>
-							<input type="text" class="form-control" placeholder="Search..." />
-							<div class="input-group-append">
-								<span class="input-group-text">
-									<i class="quick-search-close ki ki-close icon-sm text-muted"></i>
-								</span>
-							</div>
-						</div>
-					</form>
-					<!--end::Form-->
-					<!--begin::Wrapper-->
-					<div class="quick-search-wrapper pt-5">
-						<div class="quick-search-result">
-							<!--begin::Message-->
-							<div class="text-muted d-none">No record found</div>
-							<!--end::Message-->
-							<!--begin::Section-->
-							<div class="font-size-sm text-primary font-weight-bolder text-uppercase mb-2">Documents</div>
-							<div class="mb-10">
-								<!--begin::Item-->
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 bg-transparent flex-shrink-0">
-										<img src="assets/media/svg/files/doc.svg" alt="" />
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">AirPlus Requirements</a>
-										<span class="font-size-sm font-weight-bold text-muted">by Grog John</span>
-									</div>
-								</div>
-								<!--end::Item-->
-								<!--begin::Item-->
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 bg-transparent flex-shrink-0">
-										<img src="assets/media/svg/files/pdf.svg" alt="" />
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">TechNav Documentation</a>
-										<span class="font-size-sm font-weight-bold text-muted">by Mary Broun</span>
-									</div>
-								</div>
-								<!--end::Item-->
-								<!--begin::Item-->
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 bg-transparent flex-shrink-0">
-										<img src="assets/media/svg/files/xml.svg" alt="" />
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">All Framework Docs</a>
-										<span class="font-size-sm font-weight-bold text-muted">by Nick Stone</span>
-									</div>
-								</div>
-								<!--end::Item-->
-								<!--begin::Item-->
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 bg-transparent flex-shrink-0">
-										<img src="assets/media/svg/files/csv.svg" alt="" />
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">Finance &amp; Accounting Reports</a>
-										<span class="font-size-sm font-weight-bold text-muted">by Jhon Larson</span>
-									</div>
-								</div>
-								<!--end::Item-->
-							</div>
-							<!--end::Section-->
-							<!--begin::Section-->
-							<div class="font-size-sm text-primary font-weight-bolder text-uppercase mb-2">Members</div>
-							<div class="mb-10">
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label" style="background-image:url('assets/media/users/150-2.jpg')"></div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">Milena Gibson</a>
-										<span class="font-size-sm font-weight-bold text-muted">UI Designer</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label" style="background-image:url('assets/media/users/150-14.jpg')"></div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">Stefan JohnStefan</a>
-										<span class="font-size-sm font-weight-bold text-muted">Marketing Manager</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label" style="background-image:url('assets/media/users/150-2.jpg')"></div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">Anna Strong</a>
-										<span class="font-size-sm font-weight-bold text-muted">Software Developer</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label" style="background-image:url('assets/media/users/150-11.jpg')"></div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">Nick Bold</a>
-										<span class="font-size-sm font-weight-bold text-muted">Project Coordinator</span>
-									</div>
-								</div>
-							</div>
-							<!--end::Section-->
-							<!--begin::Section-->
-							<div class="font-size-sm text-primary font-weight-bolder text-uppercase mb-2">Files</div>
-							<div class="mb-10">
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label">
-											<i class="flaticon-psd text-primary"></i>
-										</div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">79 PSD files generated</a>
-										<span class="font-size-sm font-weight-bold text-muted">by Grog John</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label">
-											<i class="flaticon2-supermarket text-warning"></i>
-										</div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">$2900 worth products sold</a>
-										<span class="font-size-sm font-weight-bold text-muted">Total 234 items</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label">
-											<i class="flaticon-safe-shield-protection text-info"></i>
-										</div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">4 New items submitted</a>
-										<span class="font-size-sm font-weight-bold text-muted">Marketing Manager</span>
-									</div>
-								</div>
-								<div class="d-flex align-items-center flex-grow-1 mb-2">
-									<div class="symbol symbol-30 flex-shrink-0">
-										<div class="symbol-label">
-											<i class="flaticon-safe-shield-protection text-warning"></i>
-										</div>
-									</div>
-									<div class="d-flex flex-column ml-3 mt-2 mb-2">
-										<a href="#" class="font-weight-bold text-dark text-hover-primary">4 New items submitted</a>
-										<span class="font-size-sm font-weight-bold text-muted">Marketing Manager</span>
-									</div>
-								</div>
-							</div>
-							<!--end::Section-->
-						</div>
-					</div>
-					<!--end::Wrapper-->
-				</div>
+				
 				<!--end::Container-->
 			</div>
 			<!--end::Content-->
 		</div>
-		<!--end::Search Panel-->
-		<!--begin::Quick Actions Panel-->
-	
-		<!--end::Quick Actions Panel-->
-		<!-- begin::User Panel-->
 		
-		<!-- end::User Panel-->
-		<!--begin::Quick Panel-->
-	
-		<!--end::Quick Panel-->
-		<!--begin::Chat Panel-->
-		
-		<!--end::Chat Panel-->
-		<!--begin::Scrolltop-->
+
 		<div id="kt_scrolltop" class="scrolltop">
 			<span class="svg-icon">
 				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
@@ -510,24 +408,29 @@
 
    <script>
 
+	$("#Save").click(function()
+	{
+
+		alert("ddd")
+		window.open('https://tstdrv2594818.app.netsuite.com/app/accounting/transactions/salesord.nl?id=98066&whence=&e=T');
+
+	});
+
+	var fileData=""
+	$('#custpage_file').change(function(){
+
+		KTApp.blockPage({
+					overlayColor: '#000000',
+					state: 'primary',
+					message: 'Please wait...'
+					});
 
 
-
-
-$('#custpage_file').change(function(){
-
-	KTApp.blockPage({
-				overlayColor: '#000000',
-				state: 'primary',
-				message: 'Please wait...'
-				});
-
-
-var formData = new FormData();
-console.log("file",$('#custpage_file')[0].files)
-var files = $('#custpage_file')[0].files[0]
-formData.append('file',files)
-
+	var formData = new FormData();
+	console.log("file",$('#custpage_file')[0].files)
+	var files = $('#custpage_file')[0].files[0]
+	formData.append('file',files)
+  
 $.ajax({
    type      : 'POST', //Method type
    url       :  '/pdfextract', //Your form processing file URL
@@ -538,42 +441,92 @@ $.ajax({
    success   : function(data) 
 		   {
               KTApp.unblockPage();	
+			  $("#template").show();
+
+			  fileData=data
+
 			   console.log("checkkk pdf data",data)
 
-			   date = data.date
-			   $('#date').val(data.date)
-			   $('#to').val(data.to)
-			   $('#attn').val(data.attn)
-			   $('#from').val(data.from)
-			   $('#jobNumber').val(data.jobNumber)
-			   $('#shipper').val(data.shipper)
 
-			   $('#pol').val(data.pol)
-			   $('#term').val(data.term)
+								// KTApp.blockPage({
+							// 			overlayColor: '#000000',
+							// 			state: 'primary',
+							// 			message: 'Please wait...'
+							// 			});
 
-			   $('#pod').val(data.pod)
-			   $('#carrierRefNo').val(data.carrierRefNo)
-			   $('#commodity').val(data.commodity)
-			   $('#volume').val(data.volume)
 
-			   console.log("check",date.items)
+					var templateValue=$("#list_template").find(":selected").val()
+					console.log("templete",templateValue)
 
-                  var items = data.items
+					if(templateValue=="templete")
+					{
+						$('#tableData').empty()
+					date = fileData.date
+					$('#date').val(fileData.date)
+					$('#to').val(fileData.to)
+					$('#attn').val(fileData.attn)
+					$('#from').val(fileData.from)
+					$('#jobNumber').val(fileData.jobNumber)
+					$('#shipper').val(fileData.shipper)
+
+					$('#pol').val(fileData.pol)
+					$('#term').val(fileData.term)
+
+					$('#pod').val(fileData.pod)
+					$('#carrierRefNo').val(fileData.carrierRefNo)
+					$('#commodity').val(fileData.commodity)
+					$('#volume').val(fileData.volume)
+
+			     console.log("check",fileData.items)
+
+                  var items = fileData.items
 				  var tableData=""
-			   for(var i=0; i<items.length; i++)
-			   {
-				tableData+='<tr>'
-					
-					tableData+= '<td>'+items[i].tankNumber+'</td>'
-					tableData+= '<td>'+items[i].tareWT+'</td>'
-					tableData+= '<td>'+items[i].releaseDate+'</td>'
-					tableData+= '<td>'+items[i].releaseRef+'</td>'
-					tableData+='</tr>'
-			   }
+				for(var i=0; i<items.length; i++)
+				{
+					   tableData+='<tr>'
+						
+						tableData+= '<td>'+items[i].tankNumber+'</td>'
+						tableData+= '<td>'+items[i].tareWT+'</td>'
+
+						tableData+= '<td>'+fileData.from+'</td>'
+						tableData+= '<td>'+fileData.to+'</td>'
+						tableData+= '<td>'+fileData.commodity+'</td>'
+
+						tableData+= '<td>'+items[i].releaseDate+'</td>'
+						tableData+= '<td>'+items[i].releaseRef+'</td>'
+						tableData+= '<td>'+fileData.volume+'</td>'
+						tableData+='</tr>'
+				}
 
 
-              $('#tableData').append(tableData);
-			   console.log("table",tableData)
+					$('#tableData').append(tableData);
+					console.log("table",tableData)
+
+
+					}
+
+					else
+					{
+						KTApp.unblockPage();
+							swal.fire({
+								text: "sss",
+								icon: "error",
+								buttonsStyling: false,
+								confirmButtonText: "Ok",
+								customClass: {
+									confirmButton: "btn font-weight-bold btn-light-primary"
+								 }
+							})
+
+						$('#tableData').empty()
+						$('#date').val('')
+						$('#jobNumber').val('')
+						$('#shipper').val('')
+
+					}
+
+
+			  
 			 
 		   },
 		   error: function(xmlhttprequest, textstatus, message) 
@@ -595,5 +548,18 @@ $.ajax({
 
 
 	});
+
+	$('#template').change(function(){
+
+			
+
+        });
+
+		$("#file_attach").click(function()
+		{
+			$("#custpage_file").click()
+
+        });
+		
 
 	</script>
